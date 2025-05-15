@@ -1,0 +1,83 @@
+import React from "react";
+
+export default function Home() {
+  return (
+    <div className="bg-[#0A0A3F] text-white min-h-screen font-sans">
+      {/* Header */}
+      <header className="flex items-center justify-between px-6 py-4 shadow-md bg-[#0A0A3F]">
+        <div className="flex items-center space-x-3">
+          <img
+            src="/logo.png"
+            alt="AAA Advanced Technologies Logo"
+            className="h-10 w-10"
+          />
+          <h1 className="text-xl font-bold">AAA Advanced Technologies</h1>
+        </div>
+        <nav className="space-x-6 hidden md:flex">
+          <a href="#services" className="hover:text-[#2D9CDB]">Services</a>
+          <a href="#about" className="hover:text-[#2D9CDB]">About</a>
+          <a href="#contact" className="hover:text-[#2D9CDB]">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-center py-20 px-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Innovative IT & Cybersecurity Solutions
+        </h2>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
+          Empowering businesses through cutting-edge technology, security, and software solutions tailored for tomorrow.
+        </p>
+        <a
+          href="#contact"
+          className="inline-block bg-[#2D9CDB] hover:bg-blue-500 text-white px-6 py-3 rounded-full font-semibold transition"
+        >
+          Get a Free Consultation
+        </a>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="bg-white text-gray-900 py-16 px-6">
+        <div className="text-center mb-10">
+          <h3 className="text-3xl font-bold">Our Services</h3>
+          <p className="text-gray-600 mt-2">
+            Comprehensive tech solutions to meet every business need.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="bg-[#f9f9f9] p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 className="text-xl font-semibold mb-2">IT Infrastructure</h4>
+            <p>Reliable, scalable, and secure IT systems tailored for your enterprise.</p>
+          </div>
+          <div className="bg-[#f9f9f9] p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 className="text-xl font-semibold mb-2">Cybersecurity</h4>
+            <p>Advanced threat protection, audits, and compliance solutions.</p>
+          </div>
+          <div className="bg-[#f9f9f9] p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 className="text-xl font-semibold mb-2">Software Development</h4>
+            <p>Custom applications and platforms built for performance and growth.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section id="contact" className="text-center py-20 px-6 bg-[#0A0A3F]">
+        <h3 className="text-3xl font-bold mb-4">Ready to Elevate Your Business?</h3>
+        <p className="text-lg max-w-xl mx-auto mb-6">
+          Connect with us to discover how we can help you secure and scale your digital future.
+        </p>
+        <a
+          href="mailto:contact@aaa-tech.com"
+          className="inline-block bg-[#2D9CDB] hover:bg-blue-500 text-white px-6 py-3 rounded-full font-semibold transition"
+        >
+          Contact Us
+        </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center text-sm py-6 bg-[#0A0A3F] border-t border-gray-700">
+        <p>© {new Date().getFullYear()} AAA Advanced Technologies. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
